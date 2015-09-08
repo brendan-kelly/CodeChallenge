@@ -57,7 +57,7 @@ t.stream(
 app.use(express.static(path.join(__dirname, 'public')));
  
 app.get('/', function (req, res) {
-  res.send('<html><body><h1>Use /tweets?offset=<int>&limit=<int> to get tweets.</h1></body></html>');
+  res.send('<html><body><h1>Use /tweets?offset=0&limit=10 to get tweets.</h1></body></html>');
 });
  
 app.get('/tweets', function(req, res) {
